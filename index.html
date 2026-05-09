@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shefaul Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,Arial;}
+body{background:#03142d;color:white;line-height:1.6;}
+a{text-decoration:none;}
+nav{width:100%;padding:18px 70px;display:flex;justify-content:space-between;align-items:center;background:#001127;position:sticky;top:0;z-index:99;flex-wrap:wrap;}
+nav h2{color:#00e1ff;font-size:24px;}
+nav ul{display:flex;list-style:none;flex-wrap:wrap;}
+nav ul li{margin-left:30px;}
+nav ul li a{color:white;font-size:16px;transition:0.3s;}
+nav ul li a:hover{color:#00e1ff;}
+
+/* Sections */
+.section{min-height:90vh;display:flex;justify-content:space-between;align-items:center;padding:70px;flex-wrap:wrap;}
+.text{width:50%;min-width:260px;}
+.text h3{font-size:22px;margin-bottom:10px;}
+.text h1{font-size:45px;color:#00e1ff;margin-bottom:10px;}
+.text p{margin:15px 0;line-height:1.6;}
+.btn{padding:10px 25px;border-radius:25px;border:none;background:#00e1ff;color:#001127;cursor:pointer;transition:0.3s;}
+.btn:hover{background:#00c0ff;color:#001127;}
+.profile{width:320px;height:320px;border-radius:50%;padding:8px;background:conic-gradient(#00e1ff,#ff00ff,#00ff9d);margin-top:20px;}
+.profile img{width:100%;height:100%;border-radius:50%;object-fit:cover;}
+.center{justify-content:center;text-align:center;padding:50px 20px;}
+footer{text-align:center;padding:20px;background:#001127;}
+
+/* Responsive */
+@media(max-width:1024px){
+  nav{padding:18px 30px;}
+  .section{padding:50px 20px;}
+}
+
+@media(max-width:850px){
+  .section{flex-direction:column;text-align:center;}
+  .text{width:100%;}
+  .profile{margin-top:30px;}
+  nav ul li{margin-left:15px;}
+}
+
+@media(max-width:500px){
+  nav h2{font-size:20px;}
+  nav ul li a{font-size:14px;margin-left:10px;}
+  .text h1{font-size:32px;}
+  .text h3{font-size:18px;}
+  .btn{padding:8px 20px;font-size:14px;}
+  .profile{width:250px;height:250px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <h2>SheFaul</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section class="section" id="home">
+<div class="text">
+  <h3>Hello, It's Me</h3>
+  <h1>Md. Shefaul Hasan</h1>
+  <h3>And I'm a <span style="color:#00e1ff;">Front-end Developer</span></h3>
+  <p>I'm a Web Designer with experience in modern website & UI creation...</p>
+  <button class="btn" onclick="document.location='#about'">More About Me</button>
+</div>
+<div class="profile">
+  <img src="./images/Screenshot_1.PNG" alt="Shefaul Profile">
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+<div class="text">
+  <h1>About Me</h1>
+  <p>
+I am a passionate Computer Science student with a strong interest in programming, problem-solving, and building creative digital solutions. From the beginning of my CSE journey, I have been curious about how technology works and how software can change the world. I am continuously learning HTML, CSS, JavaScript, Data Structures, Algorithms, and core Computer Science concepts to improve my skills every day. My dream is to become a successful software engineer at a top tech company like Google, and I believe success comes from hard work, consistency, dedication, and never giving up. I always try to challenge myself, learn from mistakes, stay disciplined, and move forward step by step. My goal is not only to build a successful career but also to create meaningful technology that helps people and makes a positive impact on the world.
+  </p>
+</div>
+<div class="profile">
+  <img src="./images/B.Sc-in-CSE.PNG" alt="About Image">
+</div>
+</section>
+
+<!-- SKILLS -->
+<section class="section center" id="skills">
+<div>
+<h1>My Skills</h1>
+<p style="margin-top:20px;">
+HTML • CSS • JavaScript • Bootstrap • C • C++ • Java • Python
+</p>
+<img src="./images/1746083747122.JFIF" style="max-width:100%;height:auto;margin-top:20px;">
+<p style="margin-top:20px;">
+I have a strong foundation in Computer Science, covering both theoretical knowledge and practical skills. My core skills include HTML, CSS, JavaScript, responsive web design, frontend development, and basic backend understanding. I am learning programming languages like C, C++, Java, and Python along with Object-Oriented Programming concepts. I also focus on Data Structures, Algorithms, Database Management Systems, SQL, Operating Systems, Networking basics, and Software Engineering principles. I understand problem-solving, debugging, logical thinking, and writing clean and efficient code. I am continuously improving my knowledge in modern technologies, version control (Git & GitHub), API handling, and real-world project development. I believe in learning every day, staying updated with technology, and building strong technical as well as professional skills to grow as a successful Computer Science Engineer.
+</p>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section center" id="projects">
+<div>
+<h1>Projects</h1>
+<p style="margin-top:20px;">
+• Portfolio Website<br>
+• E-commerce Website<br>
+• Landing Page<br>
+• College Project
+</p>
+<img src="./images/shutterstock-1199480788.PNG" style="max-width:100%;height:auto;margin-top:20px;">
+<p style="margin-top:20px;">
+I love working on real-life projects because they help me turn my knowledge into practical skills. I have worked on different types of projects including personal portfolio websites, simple e-commerce designs, responsive landing pages, student management concepts, and basic web applications. Through these projects, I have learned how to plan a project, design clean UI, write organized code, debug problems, and finally build something useful. I always try to use modern technologies, follow best practices, and make my projects user-friendly and responsive for all devices. My goal is to keep building more advanced projects like dynamic websites, full-stack applications, and AI or software-based systems that solve real-world problems and help people in meaningful ways.
+</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section center" id="contact">
+<div>
+<h1>Contact Me</h1>
+<p style="margin-top:20px;">
+<img src="./images/c.PNG" style="max-width:100%;height:auto;"><br><br>
+Email: mdshefaulhasan21@gmail.com<br>
+Phone: +8801765339736 <br>
+Address: Boyra, Khulna.
+</p>
+</div>
+</section>
+
+<footer>© 2025 | SheFaul </footer>
+
+</body>
+</html>
